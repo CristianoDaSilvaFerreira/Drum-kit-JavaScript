@@ -21,7 +21,9 @@ main {
   color: #ffcc00;
   margin: 15vh auto;
   font-size: calc(5vw + 20px);
-  text-shadow: 0 0 3px white;
+  text-shadow: 0 0 10px black,
+               0 0 10px black,
+               0 0 10px black,
   }
 
 .container {
@@ -41,7 +43,7 @@ main {
   height: 100px;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, .1);
+  background-color: #000000BB;
   color: white;
   font-size: calc(3vw + 20px);
   border: 3px solid white;
