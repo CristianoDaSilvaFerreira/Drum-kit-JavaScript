@@ -1,2 +1,4 @@
-# Drum-kit-JavaScript
-Esse projeto é baseado no desafios do site do JavaScript30
+<h1 align="center">DrumKit JavaScript</h1>
+
+<p>Esse projeto é baseado no desafios do site do <a href="https://javascript30.com/" target="_blank">JavaScript30</a>, que consiste em criação de diversos projetos durante o período de 30 dias. Mas como já havia feito um projeto anteriormente basenado na mesma metodologia, fazendo um refactor, cria-se um novo projeto. O projeto anterior estar nesse repositório <a href="https://github.com/CristianoDaSilvaFerreira/Bateria-JS">Bateria JavaScript</a> Porém esse projeto os componentes serão criado dinâmicamente, ou seja, inserido serão usando o JavaScript e não o HTML.</p>
+<p>Dessa maneira estar sendo consolidado o conhecimento do JavaScript, de manipulação de elementos do DOM, e assim também o conhecimento de captura das teclas. Da mesma forma o efeito de som, como o JavaScript trabalhar esse tipo de elememento</p>
