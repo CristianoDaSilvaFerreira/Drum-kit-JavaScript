@@ -28,11 +28,26 @@ const playSong = (letter) => {
   audio.play();
 }
 
+const addEfect = (letter) => document.getElementById(letter)
+  .classList.add('active');
+
+const removeEfect = (letter) => {
+  const div = document.getElementById(letter);
+  const removeActive = () => div.classList.remove('active');
+  div.addEventListener('transitionend', removeActive);
+}
+
 const activeDiv = (event) => {
-  const letter = event.target.id;
+ 
+  const letter = event.type == 'click' 
+    ? event.target.id 
+    : event.key.toUpperCase();
+    
   const allowedLetter = sounds.hasOwnProperty(letter);
   if (allowedLetter) {
+    addEfect(letter);
     playSong(letter);
+    removeEfect(letter);
   }
   playSong(letter);
 }
@@ -40,3 +55,5 @@ const activeDiv = (event) => {
 view(sounds);
 
 document.getElementById('container').addEventListener('click', activeDiv);
+
+window.addEventListener('keydown', activeDiv);
